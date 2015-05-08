@@ -1,7 +1,5 @@
 ;~ Control de Facturacion en AutoIt
 ;~ Autor : Daniel Andres Vargas
-;~ Creado funcion principal basica
-;~ modificacion de prueba git
 
 
 #include <MsgBoxConstants.au3>
@@ -25,7 +23,15 @@ Func menu()
 	  Case $mVersion
 		 MsgBox(0,"","Version: " & $version)
 	  Case $mExit
-		$salir=0
+		 $contrasena =InputBox("Contraseña","Ingrese la contraseña de Usuario Autorizado","","*")
+		 If $contrasena=123 Then
+			$salir=0
+			MsgBox(0,"","Cerrando Control de Facturación",2)
+		 Else
+			MsgBox(0,"Error de Contraseña","Verifique Contraseña" & @CRLF & @CRLF & "Si no es un usuario autorizado no tiene permitida esta opción" ,3 )
+
+
+	     EndIf
    EndSwitch
 EndFunc
 
