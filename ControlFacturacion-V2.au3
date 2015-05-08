@@ -1,6 +1,7 @@
 ;~ Control de Facturacion en AutoIt
 ;~ Autor : Daniel Andres Vargas
 ;~ Creado funcion principal basica
+;~ modificacion de prueba git
 
 
 #include <MsgBoxConstants.au3>
