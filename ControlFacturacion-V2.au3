@@ -1,3 +1,8 @@
+;~ Control de Facturacion en AutoIt
+;~ Autor : Daniel Andres Vargas
+;~ Creado funcion principal basica
+
+
 #include <MsgBoxConstants.au3>
 #include <TrayConstants.au3>
 
